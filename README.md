@@ -1,4 +1,5 @@
 ## 介绍
+飞书链接：https://q72gf9opzd.feishu.cn/docx/JDpWdEJgjotMoAxp9FacRHSEnot
 
 为了免去繁杂的环境配置工作，提供开箱即用的 Spark + Hadoop 快捷部署方案。基于 [BitNami](https://github.com/bitnami/bitnami-docker-spark) 项目的成熟镜像方案，搭建 Spark Docker 集群，并在原有镜像基础上，构建了安装有对应版本 Hadoop 的镜像。详细构建过程请参考：[使用 Docker 快速部署 Spark + Hadoop 大数据集群](https://s1mple.cc/2021/10/12/%E4%BD%BF%E7%94%A8-Docker-%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2-Spark-Hadoop-%E5%A4%A7%E6%95%B0%E6%8D%AE%E9%9B%86%E7%BE%A4/)。
 
