@@ -19,23 +19,10 @@ public class SparkExample {
                 ),
                 Person.class
         );
-
         // 显示数据
         df.show();
-
         // 结束 Spark 任务
         spark.stop();
     }
-
-    public static class Person implements java.io.Serializable {
-        public String name;
-        public int age;
-
-        public Person() {}
-
-        public Person(String name, int age) {
-            this.name = name;
-            this.age = age;
-        }
-    }
 }
+//spark-submit --class com.example.sparkdemo.SparkExample --name testcjl  --master spark://localhost:7077 --conf "spark.executor.extraLibraryPath=$HADOOP_HOME/lib/native" /opt/share/SparkDemo-0.0.1-SNAPSHOT.jar
