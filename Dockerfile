@@ -23,14 +23,14 @@ RUN tar -xzvf hadoop-3.2.0.tar.gz && \
 	rm -rf hadoop-3.2.0.tar.gz && \
 	mkdir /var/log/hadoop
 
-RUN mkdir -p /root/hdfs/namenode && \ 
+RUN mkdir -p /root/hdfs/namenode && \
     mkdir -p /root/hdfs/datanode 
 
 COPY config/* /tmp/
 
 RUN mv /tmp/ssh_config /root/.ssh/config && \
     mv /tmp/hadoop-env.sh $HADOOP_CONF_DIR/hadoop-env.sh && \
-    mv /tmp/hdfs-site.xml $HADOOP_CONF_DIR/hdfs-site.xml && \ 
+    mv /tmp/hdfs-site.xml $HADOOP_CONF_DIR/hdfs-site.xml && \
     mv /tmp/core-site.xml $HADOOP_CONF_DIR/core-site.xml && \
     mv /tmp/mapred-site.xml $HADOOP_CONF_DIR/mapred-site.xml && \
     mv /tmp/yarn-site.xml $HADOOP_CONF_DIR/yarn-site.xml && \
